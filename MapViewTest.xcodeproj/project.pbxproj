@@ -21,6 +21,10 @@
 		82B16D9817F1489700E0BC72 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 82B16D7A17F1489600E0BC72 /* UIKit.framework */; };
 		82B16DA017F1489700E0BC72 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 82B16D9E17F1489700E0BC72 /* InfoPlist.strings */; };
 		82B16DA217F1489700E0BC72 /* MapViewTestTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 82B16DA117F1489700E0BC72 /* MapViewTestTests.m */; };
+		82B16DAC17F148F300E0BC72 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 82B16DAB17F148F300E0BC72 /* MapKit.framework */; };
+		82B16DB117F14A8900E0BC72 /* Annotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 82B16DAE17F14A8900E0BC72 /* Annotation.m */; };
+		82B16DB217F14A8900E0BC72 /* AnnotationView.m in Sources */ = {isa = PBXBuildFile; fileRef = 82B16DB017F14A8900E0BC72 /* AnnotationView.m */; };
+		82E1D94517F14E7800FDF969 /* Pin23.png in Resources */ = {isa = PBXBuildFile; fileRef = 82E1D94417F14E7800FDF969 /* Pin23.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +57,12 @@
 		82B16D9D17F1489700E0BC72 /* MapViewTestTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MapViewTestTests-Info.plist"; sourceTree = "<group>"; };
 		82B16D9F17F1489700E0BC72 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		82B16DA117F1489700E0BC72 /* MapViewTestTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MapViewTestTests.m; sourceTree = "<group>"; };
+		82B16DAB17F148F300E0BC72 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		82B16DAD17F14A8900E0BC72 /* Annotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Annotation.h; sourceTree = "<group>"; };
+		82B16DAE17F14A8900E0BC72 /* Annotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Annotation.m; sourceTree = "<group>"; };
+		82B16DAF17F14A8900E0BC72 /* AnnotationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnnotationView.h; sourceTree = "<group>"; };
+		82B16DB017F14A8900E0BC72 /* AnnotationView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnnotationView.m; sourceTree = "<group>"; };
+		82E1D94417F14E7800FDF969 /* Pin23.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Pin23.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +70,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				82B16DAC17F148F300E0BC72 /* MapKit.framework in Frameworks */,
 				82B16D7917F1489600E0BC72 /* CoreGraphics.framework in Frameworks */,
 				82B16D7B17F1489600E0BC72 /* UIKit.framework in Frameworks */,
 				82B16D7717F1489600E0BC72 /* Foundation.framework in Frameworks */,
@@ -101,6 +112,7 @@
 		82B16D7517F1489600E0BC72 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				82B16DAB17F148F300E0BC72 /* MapKit.framework */,
 				82B16D7617F1489600E0BC72 /* Foundation.framework */,
 				82B16D7817F1489600E0BC72 /* CoreGraphics.framework */,
 				82B16D7A17F1489600E0BC72 /* UIKit.framework */,
@@ -112,11 +124,16 @@
 		82B16D7C17F1489600E0BC72 /* MapViewTest */ = {
 			isa = PBXGroup;
 			children = (
+				82E1D94417F14E7800FDF969 /* Pin23.png */,
 				82B16D8517F1489600E0BC72 /* DJAppDelegate.h */,
 				82B16D8617F1489600E0BC72 /* DJAppDelegate.m */,
 				82B16D8817F1489600E0BC72 /* Main.storyboard */,
 				82B16D8B17F1489600E0BC72 /* DJViewController.h */,
 				82B16D8C17F1489600E0BC72 /* DJViewController.m */,
+				82B16DAD17F14A8900E0BC72 /* Annotation.h */,
+				82B16DAE17F14A8900E0BC72 /* Annotation.m */,
+				82B16DAF17F14A8900E0BC72 /* AnnotationView.h */,
+				82B16DB017F14A8900E0BC72 /* AnnotationView.m */,
 				82B16D8E17F1489600E0BC72 /* Images.xcassets */,
 				82B16D7D17F1489600E0BC72 /* Supporting Files */,
 			);
@@ -229,6 +246,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				82E1D94517F14E7800FDF969 /* Pin23.png in Resources */,
 				82B16D8F17F1489600E0BC72 /* Images.xcassets in Resources */,
 				82B16D8117F1489600E0BC72 /* InfoPlist.strings in Resources */,
 				82B16D8A17F1489600E0BC72 /* Main.storyboard in Resources */,
@@ -252,6 +270,8 @@
 			files = (
 				82B16D8717F1489600E0BC72 /* DJAppDelegate.m in Sources */,
 				82B16D8D17F1489600E0BC72 /* DJViewController.m in Sources */,
+				82B16DB217F14A8900E0BC72 /* AnnotationView.m in Sources */,
+				82B16DB117F14A8900E0BC72 /* Annotation.m in Sources */,
 				82B16D8317F1489600E0BC72 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -461,6 +481,7 @@
 				82B16DA717F1489700E0BC72 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		82B16DA817F1489700E0BC72 /* Build configuration list for PBXNativeTarget "MapViewTestTests" */ = {
 			isa = XCConfigurationList;
@@ -469,6 +490,7 @@
 				82B16DAA17F1489700E0BC72 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
